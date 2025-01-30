@@ -173,6 +173,12 @@
   font-size: 14px;
 }
 
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two-column grid */
+  gap: 12px; /* Space between the education items */
+}
+
 .education-item {
   margin-bottom: 12px;
 }
