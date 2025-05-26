@@ -5,20 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Redirect</title>
     <script>
-<<<<<<< HEAD
-      // Get the current path
-      const path = window.location.pathname;
-      
-      // Set the PDF file based on the path
-      let pdfFile = 'ESAadityaReddyResume.pdf'; // Default resume
-      
-      if (path.endsWith('/es') || path.endsWith('/es/')) {
-        pdfFile = 'ESAadityaReddyResume-ES.pdf'; // ES version resume
-      }
-      
-      // Redirect to the appropriate PDF
-      window.location.href = pdfFile;
-=======
       // Function to handle routing
       function handleRouting() {
         const path = window.location.pathname;
@@ -38,19 +24,13 @@
 
       // Run the routing when the page loads
       window.onload = handleRouting;
->>>>>>> 7932ae4 (Fix routing for GitHub Pages and add 404.html for /es route)
     </script>
   </head>
   <body>
     <p>If you are not redirected, please choose a resume version:</p>
     <ul>
-<<<<<<< HEAD
-      <li><a href="ESAadityaReddyResume.pdf">E S Aaditya Reddy (Legal Name)</a></li>
-      <li><a href="ESAadityaReddyResume-ES.pdf">Aaditya Reddy ES</a></li>
-=======
       <li><a href="?en">E S Aaditya Reddy (Legal Name)</a></li>
       <li><a href="?es">Aaditya Reddy ES</a></li>
->>>>>>> 7932ae4 (Fix routing for GitHub Pages and add 404.html for /es route)
     </ul>
   </body>
 </html>
