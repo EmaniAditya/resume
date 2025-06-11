@@ -8,12 +8,12 @@
       // Function to handle routing
       function handleRouting() {
         const path = window.location.pathname;
-        let pdfFile = 'ESAadityaReddyResume.pdf'; // Default resume
+        let pdfFile = 'ESAadityaReddyResume.pdf'; // Default resume (E S Aaditya Reddy)
         
-        // Check for /es path
+        // Check for /es path or ?es parameter
         if (path.endsWith('/es') || path.endsWith('/es/') || 
             path.endsWith('404.html') || window.location.search.includes('es')) {
-          pdfFile = 'ESAadityaReddyResume-ES.pdf'; // ES version resume
+          pdfFile = 'AadityaReddyESResume.pdf'; // Aaditya Reddy ES version
         }
         
         // Redirect to the appropriate PDF
