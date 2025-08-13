@@ -5,10 +5,18 @@ This repository shows one lightweight way to achieve that.
 
 ---
 
+## 🤡 Meme Splash Version
+This `real-resume` branch adds a playful intro: a full-screen meme shows for **3 seconds**, followed by a gag message for **2 seconds** before redirecting to `ESAadityaReddyResume.pdf`.
+
+Swap `images/the_img.jpeg` or edit the timing/target in `index.html` to customize.
+
+---
+
 ## 📄 What You Get
-* A public URL that **automatically redirects** to your PDF (no extra clicks for recruiters).
+* A single link with a **3-second meme splash screen** (perfect ice-breaker).
+* After the meme + 2-second message, visitors are automatically redirected.
 * Zero infrastructure or ongoing costs – just GitHub Pages.
-* Simple updates: commit a new PDF and push.
+* Simple updates: replace the meme image or PDF and push.
 
 ---
 
@@ -26,12 +34,13 @@ That’s it – your resume is live! 💼
 ---
 
 ## 🛠️ How It Works
-1. **GitHub Pages** serves everything in this repository as a static website.
-2. `index.html` runs a tiny JavaScript snippet that immediately redirects the visitor to your PDF (`*.pdf`).
-3. Because the PDF lives in the repo, updating it is as easy as committing a new file.
+1. **GitHub Pages** serves this repo as a static site.
+2. `index.html` first displays a full-screen meme image (`images/the_img.jpeg`) for **3 s**.
+3. It then shows a short message (“Oh that was the real resume… here’s my wrong resume…”) for **2 s**.
+4. Finally it redirects to the designated PDF (`ESAadityaReddyResume.pdf`).
+5. Swap the image or change `pdfFile` in `index.html` to customize.
 
-> Want multiple versions (e.g., legal name vs. preferred name)?  
-> See the conditional logic inside `index.html`. It chooses which PDF to serve based on the URL path or query string.
+> _Legacy note_: The earlier multi-resume conditional logic was simplified in this branch.
 
 ---
 
